@@ -1,0 +1,286 @@
+.img_box {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .card_box {
+    width: 400px;
+    height: 428px;
+    border-radius: 20px;
+    opacity: 1;
+    border: 1px solid rgba(20, 255, 145, 0.46);
+    background: linear-gradient(
+      180deg,
+      rgba(36, 255, 146, 0.62) 0%,
+      rgba(16, 252, 134, 0) 100%
+    );
+  }
+  .left_card {
+    transform: rotateY(40deg);
+    // transform: rotateZ(-15deg);
+    // transform: rotateX(-15deg);
+  }
+  .right_card {
+    transform: rotateY(-40deg);
+    // transform: rotateZ(15deg);
+    // transform: rotateX(15deg);
+  }
+}
+.content_main {
+  width: 900px;
+  position: relative;
+  .swiper_wrap {
+    width: 900px;
+    border: 1px solid #faf209;
+    background: rgba(171, 182, 255, 0.08);
+    border-radius: 20px;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .slide_prev {
+    cursor: pointer;
+    margin: 0 10px;
+    width: 62px;
+    height: 62px;
+    opacity: 1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .slide_next {
+    cursor: pointer;
+    margin: 0 10px;
+    width: 62px;
+    height: 62px;
+    opacity: 1;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .slide_prev,
+  .slide_next {
+    // position: absolute;
+    // top: 72px;
+    // cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .dapp_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 50px;
+    .container_title {
+      display: flex;
+      align-items: center;
+      height: 34px;
+      justify-content: space-between;
+      margin: 20px 0;
+      .title {
+        flex: 1;
+        opacity: 1;
+        color: #e7435e;
+        font-size: 28px;
+        font-weight: 400;
+        font-family: "PangMenZhengDao";
+        text-align: left;
+      }
+      .img_box {
+        flex: 1;
+        opacity: 1;
+      }
+    }
+    .container_main {
+      width: 100%;
+      .main_content {
+        width: 100%;
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        .left {
+          width: 300px;
+          height: 100%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .right {
+          width: 450px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+      .mint_button_container {
+        text-align: center;
+        .mint_but {
+          width: 800px;
+          height: 60px;
+          font-size: 25px;
+          margin-top: 30px;
+          border-radius: 10px;
+          color: black;
+          background: linear-gradient(90deg, #e7435e 0%, #faf209 100%);
+        }
+      }
+    }
+    .white_list {
+      margin: 30px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .address {
+        flex: 1;
+        .label {
+          height: 27px;
+          // opacity: 1;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 18px;
+          font-weight: 400;
+          font-family: "Oswald";
+          text-align: left;
+        }
+        .value {
+          height: 30px;
+          opacity: 1;
+          color: rgba(255, 255, 255, 1);
+          font-size: 20px;
+          font-weight: 400;
+          font-family: "Noto Sans SC";
+          text-align: left;
+        }
+      }
+      .checked_container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+
+    .mint_container {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .mint_info {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .mint_item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: left;
+          .name {
+            height: 27px;
+            opacity: 1;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 18px;
+            font-weight: 400;
+            font-family: "Oswald";
+            text-align: left;
+          }
+          .value {
+            height: 30px;
+            opacity: 1;
+            color: rgba(255, 255, 255, 1);
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Noto Sans SC";
+            text-align: left;
+          }
+        }
+      }
+      .operation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .mint_count {
+        width: 150px;
+      }
+    }
+    .count_buttons {
+      color: black;
+      font-size: 28px;
+      .count {
+        display: inline-block;
+        width: 40px;
+        text-align: center;
+        font-weight: 800;
+        color: #fff;
+      }
+      .but_text {
+        cursor: pointer;
+        width: 32px;
+        font-size: 28px;
+        background-color: #faf209;
+        color: #000;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    .mint_button {
+      width: 100%;
+      Button {
+        width: 100%;
+      }
+    }
+    .introduce {
+      color: #fff;
+      text-align: center;
+    }
+    .suplly_container {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .name {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Oswald";
+        text-align: left;
+        margin-right: 15px;
+      }
+      .value {
+        height: 44px;
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+        font-size: 30px;
+        font-weight: 700;
+        font-family: "Noto Sans SC";
+        text-align: left;
+      }
+    }
+  }
+  .swiper-slide {
+    width: 100%;
+  }
+}

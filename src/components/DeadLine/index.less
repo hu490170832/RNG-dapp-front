@@ -1,0 +1,112 @@
+.ddl_container {
+  width: 100%;
+
+  .ddl_title {
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Oswald";
+    text-align: left;
+    margin: 11px 0;
+  }
+  .ddl_content {
+    width: 100%;
+    // height: 134px;
+    display: flex;
+    justify-content: space-between;
+    .ddl_item_container {
+      width: 20%;
+      box-sizing: border-box;
+      padding: 15px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      opacity: 1;
+      border: 1px solid rgba(255, 255, 255, 0.44);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.52) 0%,
+        rgba(255, 255, 255, 0.28) 100%
+      );
+      .name {
+        text-align: center;
+        width: 100%;
+        height: 20px;
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Noto Sans SC";
+      }
+      .value {
+        width: 100%;
+        height: 70px;
+        opacity: 1;
+        color: rgba(255, 255, 255, 1);
+        font-size: 60px;
+        font-weight: 400;
+        font-family: "Digital Numbers";
+        text-align: center;
+        padding-bottom: 8px;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.28);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ddl_container {
+    .ddl_title {
+      font-size: 1.4rem;
+    }
+    .ddl_content {
+      .ddl_item_container {
+        width: 23%;
+        padding: 2px;
+        .value {
+          font-size: 2rem;
+        }
+        .name {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+  .white_list {
+    .address {
+      .label {
+        font-size: 0.8rem ;
+      }
+      .value {
+        font-size: 0.8rem ;
+      }
+    }
+    .checked_container {
+      button {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .mint_container {
+    .mint_info {
+      .mint_item {
+        .name {
+          font-size: 0.8rem ;
+        }
+        .value {
+          font-size: 0.8rem ;
+        }
+      }
+      .count_buttons {
+        button {
+          span {
+            font-size: 1rem ;
+          }
+        }
+      }
+    }
+  }
+}
